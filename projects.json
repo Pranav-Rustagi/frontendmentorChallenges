@@ -6,5 +6,9 @@
     {
         "name": "Profile Card Component",
         "skills": ["html", "css"]
+    },
+    {
+        "name": "Stats Preview Card Component",
+        "skills": ["html", "css"]
     }
 ]

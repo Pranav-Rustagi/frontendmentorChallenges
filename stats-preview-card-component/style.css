@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    --main-bck: #090b1a;
+    --card-bck: #1b1938;
+    --spcl-text: #aa5cdb;
+    --para-text: #ffffff8c;
+    --heading-txt : #fff;
+    --img-xlen: 540px;
+    --img-ylen: 446px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    color: var(--heading-txt);
+}
+
+main, #mainContainer, #txtContainer, #statContainer {
+    display: flex;
+}
+
+main {
+    min-height: 100vh;
+    background: var(--main-bck);
+    padding: 5rem;
+}
+
+#mainContainer {
+    margin: auto;
+    background: var(--card-bck);
+    min-width: calc(100vw - (100vh - var(--img-ylen)));
+    min-height: var(--img-ylen);
+    border-radius: 0.5rem;
+    flex-direction: row-reverse;
+}
+
+#txtContainer {
+    width: 52.5%;
+    padding: 5rem;
+    padding-right: 9rem;
+    flex-direction: column;
+}
+
+.heading1, .heading1 span {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.heading1 span {
+    color: var(--spcl-text);
+}
+
+.fadedtxt {
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--para-text);
+}
+
+.heading1 + .fadedtxt {
+    padding: 1.5rem 1rem 4rem 0;
+    line-height: 1.5rem;
+}
+
+.heading3 {
+    font-size: 1.5rem;
+}
+
+.heading3 + .fadedtxt {
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+#statContainer {
+    justify-content: space-between;
+    margin: auto 2.5rem 0 0;
+}
+
+
+#imgContainer {
+    width: 47.5%;
+    position: relative;
+    border-radius: 0 0.5rem 0.5rem 0;
+    overflow: hidden;
+    background: var(--spcl-text) url(./images/image-header-desktop.jpg) center;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+
+#imgContainer::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: var(--spcl-text);
+    opacity: 0.25;
+    z-index: 5;
+}
+
+@media (max-width: 1350px) and (min-width: 1201px) {
+    #txtContainer {
+        padding-right: 7.5rem;
+    }
+
+    #statContainer {
+        margin-right: 1.25rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    #txtContainer {
+        padding-right: 5rem;
+    }
+
+    #statContainer {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 769px) {
+
+    * {
+        font-size: 12.5px;
+    }
+
+    .heading1, .heading1 span {
+        font-size: 2rem;
+    }
+    
+    #mainContainer {
+        min-height: calc(var(--img-ylen) * 0.75);
+    }
+}
+
+@media (max-width: 768px) {
+
+    main {
+        padding: 5rem 7.5rem;
+    }
+
+    #mainContainer {
+        flex-direction: column;
+        min-width: initial;
+        min-height: initial;
+    }
+
+    #imgContainer {
+        width: 100%;
+        min-height: 65vw;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    #txtContainer {
+        padding: 2.5rem;
+        width: 100%;
+    }
+
+    .heading1, .fadedtxt, .heading3 {
+        text-align: center;
+    }
+
+    .heading1, .heading1 span {
+        font-size: 1.625rem;
+    }
+
+    .fadedtxt {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        padding: 5rem 2.5rem;
+    }
+
+    #txtContainer {
+        padding: 2rem 2rem 3rem;
+    }
+
+    #statContainer {
+        flex-direction: column;
+    }
+
+    #statContainer > div:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+}

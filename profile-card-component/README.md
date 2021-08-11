@@ -38,5 +38,5 @@ The challenge was to :
 ## <a name="#links"></a>Links
 The website is deployed on Github Pages.
 
-- Live Site URL : [live site](https://pranav-rustagi.github.io/profile-card-component)
+- Live Site URL : [live site](https://pranav-rustagi.github.io/frontendmentorChallenges/profile-card-component)
 - Frontend Mentor solution URL : [frontend mentor solution](https://www.frontendmentor.io/solutions/profile-card-component-using-flexbox-and-css-grid-EDDphV8QB)

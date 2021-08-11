@@ -15,18 +15,17 @@
 <br/>
 
 ## <a name="overview"></a>Overview
-This is a solution to the [3-column preview card component challenge](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-) on Frontend Mentor.
+This is a solution to the [stats preview card component challenge](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62/hub/stats-preview-card-component-LOvkjJ9o3) on Frontend Mentor.
 
 <br/>
 
 ## <a name="the-challenge"></a>The challenge
 
-![Design previews for the 3-column preview card component](./design/challengeDesign.jpg)
+![Design previews for the stats preview card component](./design/challengeDesign.jpg)
 
 The challenge was to :
-- Build out a 3-column preview card component as given above.
+- Build out a stats preview card component as given above.
 - Changing layout depending on the device's screen size of the user (desktop/mobile).
-- Changing styling of buttons on hovering.
 
 <br/>
 
@@ -48,5 +47,5 @@ The challenge was to make webpage responsive for desktop view, and mobile view. 
 ## <a name="#links"></a>Links
 The website is deployed on Github Pages.
 
-- Live Site URL : [live site](https://pranav-rustagi.github.io/frontendmentorChallenges/3-column-preview-card-component)
-- Frontend Mentor solution URL : [frontend mentor solution](https://www.frontendmentor.io/solutions/flexbox-custom-css-responsiveness-google-fonts-Cr2iqrN4h)
+- Live Site URL : [live site](https://pranav-rustagi.github.io/fontendmentorChallenges/stats-preview-card-component)
+- Frontend Mentor solution URL : [frontend mentor solution](https://www.frontendmentor.io/solutions/stats-preview-card-component-using-flexboxes-9B9AopMA8)
