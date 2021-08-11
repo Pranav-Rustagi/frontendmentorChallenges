@@ -1,7 +1,36 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+
 body {
-    background: #212121;
+    /* background: #212121;
     background: -webkit-linear-gradient(to bottom, #000000, #434343);
-    background: linear-gradient(to bottom, #000000, #434343);
+    background: linear-gradient(to bottom, #000000, #434343); */
+
+    background: #004241;
+    background: -webkit-linear-gradient(top left , #004241, #f5d478);
+    background: linear-gradient(top left , #004241, #f5d478);
+
+    background-attachment: fixed;
+
+    user-select: none;
+}
+
+h5.card-title {
+    min-height: 3rem;
+}
+
+.card {
+    transition: all 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card-img-top {
+    -webkit-user-drag: none;
 }
 
 footer {

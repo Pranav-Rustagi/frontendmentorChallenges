@@ -1,0 +1,153 @@
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --design-alignment: calc(978px / 2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    text-transform: capitalize;
+}
+
+main, #sec1 {
+    position: relative;
+}
+
+main, #sec1, #sec2 {
+    display: flex;
+}
+
+main::before, main:after, #sec1 > div:first-child, footer {
+    position: absolute;
+}
+
+main, #card {
+    overflow: hidden;
+}
+
+#card, #sec2 {
+    display: grid;
+}
+
+#card > div:first-child, #sec1 > div:first-child {
+    background-size: cover;
+}
+
+.strong, .light, footer {
+    text-align: center;
+}
+
+#sec1:after, footer {
+    width: 100%;
+}
+
+main {
+    min-height: 100vh;
+    padding: 1rem;
+    background: var(--dark-cyan);
+}
+
+main::before {
+    content: url(./images/bg-pattern-top.svg);
+    top: calc(-1 * var(--design-alignment));
+    right: 50%;
+}
+
+main::after {
+    content: url(./images/bg-pattern-bottom.svg);
+    left: 50%;
+    top: 50%;
+}
+
+#card {
+    background: #fff;
+    height: 375px;
+    width: 350px;
+    border-radius: 0.75rem;
+    margin: auto;
+    z-index: 5;
+    grid-template-rows: 38% 39% auto;
+    box-shadow: 0 2rem 4.5rem rgba(0, 0, 0, 0.25);
+}
+
+#card > div:first-child {
+    background: url(./images/bg-pattern-card.svg);
+    background-color: var(--dark-cyan);
+}
+
+#sec1 {
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#sec1 > div:first-child {
+    left: calc(50% - 54px);
+    top: -54px;
+    height: 108px;
+    width: 108px;
+    border: 0.3rem solid #fff;
+    border-radius: 100%;
+    background: url(./images/image-victor.jpg);
+}
+
+.strong {
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.light {
+    color: var(--dark-gray);
+    font-weight: 400;
+}
+
+#sec1 .strong + .light {
+    font-size: 0.75rem;
+    padding: 0.5rem 0 1.25rem;
+}
+
+.strong .light {
+    padding-left: 0.35rem;
+}
+
+#sec1:after {
+    content: "";
+    border-top: 1.5px solid #e9e9e9;
+}
+
+#sec2 {
+    margin: 0 1rem;
+    grid-template-columns: repeat(3, auto);
+}
+
+#sec2 > div {
+    place-self: center;
+}
+
+#sec2 .strong {
+    text-transform: uppercase;
+}
+
+#sec2 .light {
+    font-size: 0.5rem;
+    letter-spacing: 1.5px;
+    margin-top: 0.25rem;
+}
+
+
+footer {
+    padding: 1.5rem;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+footer a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}

@@ -1,7 +1,10 @@
 [
     {
         "name": "3-Column Preview Card Component",
-        "skills": ["html" , "css"],
-        "path": "3-column-preview-card-component"
+        "skills": ["html" , "css"]
+    },
+    {
+        "name": "Profile Card Component",
+        "skills": ["html", "css"]
     }
 ]

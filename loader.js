@@ -10,25 +10,30 @@ async function fetchData() {
 
 function loadChallenges(dataObj) {
     const container = document.querySelector("section#challenges");
-    const template = container.removeChild(document.querySelector("#item-template"));
+    container.innerHTML = "";
 
     for(obj of dataObj) {
-        let clone = template.cloneNode(true);
-        let skillBlock = clone.querySelector(".card-body");
 
-        clone.classList.remove("d-none");
-        clone.querySelector("img").src = "./assets/challenges/" + obj.path + ".jpg";
-        clone.querySelector("h5.card-title").innerText = obj.name;
-        clone.querySelector(".view-code").href = "https://github.com/Pranav-Rustagi/frontendmentorChallenges/tree/main" + obj.path;
-        clone.querySelector(".view-site").href = "./" + obj.path;
+        let path = obj.name.toLowerCase().split(" ").join("-");
+        let skillBlock = "";
 
         for(tag of obj.skills) {
-            let spanEl = document.createElement("span");
-            spanEl.classList.add("badge", "bg-danger", "mx-1");
-            spanEl.innerText = tag.toUpperCase();
-            skillBlock.append(spanEl);
+            skillBlock += `<span class="badge bg-danger mx-1">${tag.toUpperCase()}</span>`;
         }
 
-        container.append(clone)
+        let itemBlock = `<div class="col-10 col-sm-6 col-md-4 col-lg-3 mb-5 mb-md-3">
+                            <div class="card shadow">
+                                <img src="./${path}/design/desktop-preview.jpg" class="card-img-top" alt="challenge image">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mt-2 mb-4 fw-bold">${obj.name}</h5>
+                                    <a href="https://github.com/Pranav-Rustagi/frontendmentorChallenges/tree/main/${path}" class="btn btn-dark d-block col-10 m-auto rounded-pill mb-2 view-code" target="_blank">View code</a>
+                                    <a href="./${path}" class="btn btn-dark d-block col-10 m-auto rounded-pill mb-2 view-site" target="_blank">Visit live site</a>
+                                    <br>
+                                    ${skillBlock}
+                                </div>
+                            </div>
+                        </div>`;
+
+        container.innerHTML += itemBlock;
     }
 }
