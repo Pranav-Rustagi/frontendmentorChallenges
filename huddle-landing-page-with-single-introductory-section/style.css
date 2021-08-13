@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    --bright-pink: #ef52cb;
+    --white: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, section {
+    display: flex;
+    justify-content: space-between;
+}
+
+body, footer > a {
+    color: var(--white);
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--violet);
+    background-image: url(./images/bg-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 3rem 5rem;
+    font-family: 'Open Sans', sans-serif;
+    flex-direction: column;
+}
+
+section {
+    flex-wrap: wrap;
+    margin-top: 4.5rem;
+}
+
+section img {
+    width: 100%;
+}
+
+section > div:first-child {
+    width: 51%;
+}
+
+section > div:last-child {
+    width: 49%;
+    padding: 3rem 2rem 0 4rem;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.75rem;
+    margin-bottom: 1.5rem;
+}
+
+p, button {
+    font-size: 1.25rem;
+}
+
+button, footer > a i {
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: all 0.25s;
+}
+
+button {
+    color: var(--violet);
+    padding: 1rem 3.5rem;
+    border: none;
+    box-shadow: 0.125rem 0.125rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    color: #fff;
+    background: var(--soft-magenta);
+}
+
+footer {
+    text-align: right;
+}
+
+footer > a i {
+    padding: 0.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid var(--white);
+    text-align: center;
+}
+
+footer > a i:hover {
+    border-color: var(--bright-pink);
+    color: var(--bright-pink);
+}
+
+footer > a:not(:last-child) {
+    margin-right: 1rem;
+}
+
+@media screen and (orientation: portrait) {
+    body {
+        background-image: url(./images/bg-mobile.svg);
+        background-size: contain;
+        padding: 2.5rem;
+    }
+
+    header img {
+        width: 40%;
+    }
+
+    section {
+        margin-top: 3.25rem;
+    }
+    
+    section > div {
+        width: 100%!important;
+    }
+
+    section > div:last-child, footer {
+        text-align: center;
+    }
+
+    section > div:last-child {
+        margin-top: 1rem;
+        padding: 3rem 0.25rem 0!important;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    button {
+        font-size: 0.85rem;
+        padding: 0.75rem 4.5rem;
+    }
+
+    footer {
+        margin-top: 5rem;
+    }
+
+    footer > a i {
+        padding: 0.4rem;
+        width: 1.75rem;
+        height: 1.75rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 1260px) {
+    body {
+        background-size: cover;
+    }
+
+    section > div:last-child {
+        padding-top: 0;
+        padding-right: 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p, button {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        margin-top: 3rem;
+    }
+}
