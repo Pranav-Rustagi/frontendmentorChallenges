@@ -33,6 +33,6 @@
         "name": "Tip calculator app",
         "project_url": "https://github.com/Pranav-Rustagi/tip-calculator-app",
         "live_url": "https://tip-calculator-app-pranavrustagi.netlify.app/",
-        "skills": ["html", "scss", "js", "react.js"]
-    } 
+        "skills": ["html", "scss", "js", "react"]
+    }
 ]

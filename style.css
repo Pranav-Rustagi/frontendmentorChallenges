@@ -32,3 +32,40 @@ footer {
     left: 0;
     background: rgba(255, 255, 255, 0.75);
 }
+
+.html {
+    background-color: var(--bs-orange);
+}
+
+.css {
+    background-color: var(--bs-blue);
+}
+
+.js {
+    background-color: var(--bs-yellow);
+}
+
+.react {
+    background-color: var(--bs-cyan);
+}
+
+.scss {
+    background-color: var(--bs-pink);
+}
+
+.project-tile {
+    border-radius: 0.5rem;
+}
+
+.project-tile .overlay {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #363636d1;
+    inset: 0;
+    transition: all 0.5s;
+}
+
+.project-tile:hover .overlay {
+    visibility: visible;
+    opacity: 1;
+}
