@@ -1,18 +1,38 @@
 [
     {
         "name": "3-Column Preview Card Component",
+        "project_url":  "https://github.com/Pranav-Rustagi/frontendmentorChallenges/tree/main/3-column-preview-card-component",
+        "live_url": "https://github.com/Pranav-Rustagi/frontendmentorChallenges/tree/main/3-column-preview-card-component",
         "skills": ["html" , "css"]
     },
     {
         "name": "Profile Card Component",
+        "project_url": "https://github.com/Pranav-Rustagi/frontendmentorChallenges/tree/main/profile-card-component",
+        "live_url": "https://pranav-rustagi.github.io/frontendmentorChallenges/profile-card-component",
         "skills": ["html", "css"]
     },
     {
         "name": "Stats Preview Card Component",
+        "project_url": "https://github.com/Pranav-Rustagi/frontendmentorChallenges/tree/main/stats-preview-card-component",
+        "live_url": "https://pranav-rustagi.github.io/frontendmentorChallenges/stats-preview-card-component",
         "skills": ["html", "css"]
     },
     {
         "name": "Huddle Landing Page With Single Introductory Section",
+        "project_url": "https://github.com/Pranav-Rustagi/frontendmentorChallenges/tree/main/huddle-landing-page-with-single-introductory-section",
+        "live_url": "https://pranav-rustagi.github.io/frontendmentorChallenges/huddle-landing-page-with-single-introductory-section",
         "skills": ["html", "css"]
-    }
+    },
+    {
+        "name": "Launch countdown timer",
+        "project_url": "https://github.com/Pranav-Rustagi/launch-countdown-timer",
+        "live_url": "https://pranav-rustagi.github.io/launch-countdown-timer",
+        "skills": ["html", "css", "js"]
+    },
+    {
+        "name": "Tip calculator app",
+        "project_url": "https://github.com/Pranav-Rustagi/tip-calculator-app",
+        "live_url": "https://tip-calculator-app-pranavrustagi.netlify.app/",
+        "skills": ["html", "scss", "js", "react.js"]
+    } 
 ]
