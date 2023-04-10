@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+    --red-light: hsl(0, 100%, 67%);
+    --yellow-orange: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --blue-cobalt: hsl(234, 85%, 45%);
+    --blue-slate-light: hsl(252, 100%, 67%);
+    --blue-royal-light: hsl(241, 81%, 54%);
+    --blue-violet: hsla(256, 72%, 46%, 1);
+    --blue-persian: hsla(241, 72%, 46%, 0.1);
+    --blue-pale: hsl(221, 100%, 96%);
+    --blue-dark-gray: hsl(224, 30%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --lavender-light: hsl(241, 100%, 89%);
+}
+
+* {
+    font-size: 18px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.main-container {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--blue-pale);
+    display: flex;
+}
+
+.box {
+    display: flex;
+    width: 60vh;
+    margin: auto;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 2rem 0.25rem rgba(34, 34, 34, 0.15);
+}
+
+.score-container {
+    border-radius: 1rem;
+    padding: 1.5rem 2.5rem;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    color: var(--lavender-light);
+    background-image: -webkit-linear-gradient(var(--blue-slate-light), var(--blue-royal-light));
+    background-image: -moz-linear-gradient(var(--blue-slate-light), var(--blue-royal-light));
+    background-image: linear-gradient(var(--blue-slate-light), var(--blue-royal-light));
+    backdrop-filter: blur(10px);
+}
+
+.fs-1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.fs-2 {
+    font-size: 1.5rem;
+}
+
+.fs-2-3 {
+    font-size: 1.25rem;
+}
+
+.fs-3 {
+    font-size: 1rem;
+}
+
+.fs-4 {
+    font-size: 0.9rem;
+}
+
+.fs-5 {
+    font-size: 0.8rem;
+}
+
+.fs-6 {
+    font-size: 0.7rem;
+}
+
+.fs-7 {
+    font-size: 0.65rem;
+}
+
+.fw-1 {
+    font-weight: 800;
+}
+
+.fw-2 {
+    font-weight: 700;
+}
+
+.fw-3 {
+    font-weight: 500;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.mt-5 {
+    margin-top: 0.5rem;
+}
+
+.mb-5 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-6 {
+    margin-bottom: 0.25rem;
+    ;
+}
+
+.p-2 {
+    padding: 0.5rem;
+}
+
+img.icon {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-right: 0.5rem;
+}
+
+.score {
+    width: 50%;
+    margin: 0 auto;
+    height: 15vh;
+    width: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 100%;
+    background-image: -webkit-linear-gradient(var(--blue-violet), var(--blue-persian));
+    backdrop-filter: blur(10px);
+}
+
+.score span.fs-6 {
+    opacity: 0.5;
+}
+
+
+.summary-container {
+    padding: 1.5rem 1.5rem;
+    color: var(--blue-dark-gray);
+    width: 50%;
+    flex-direction: column;
+}
+
+.summary-container>div {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--blue-dark-gray);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    border: none;
+    width: 100%;
+}
+
+.red {
+    color: var(--red-light);
+}
+
+.teal {
+    color: var(--green-teal);
+}
+
+.yellow {
+    color: var(--yellow-orange);
+}
+
+.cobalt {
+    color: var(--blue-cobalt);
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.d-inline-block {
+    display: inline;
+}
+
+.gray {
+    opacity: 0.75;
+}
+
+.f-align-center {
+    display: flex;
+    align-items: center;
+}
+
+
+@media (max-width: 475px) {
+    .box {
+        width: 100vw;
+        flex-direction: column;
+        margin: 0;
+        min-height: 100vh;
+    }
+
+    .score-container {
+        height: 45%;
+        width: 100%;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .summary-container {
+        height: 55%;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+}

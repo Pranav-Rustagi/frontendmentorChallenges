@@ -2,7 +2,7 @@
     {
         "name": "3-Column Preview Card Component",
         "project_url":  "https://github.com/Pranav-Rustagi/frontendmentorChallenges/tree/main/3-column-preview-card-component",
-        "live_url": "https://github.com/Pranav-Rustagi/frontendmentorChallenges/tree/main/3-column-preview-card-component",
+        "live_url": "https://pranav-rustagi.github.io/frontendmentorChallenges/3-column-preview-card-component",
         "skills": ["html" , "css"]
     },
     {
@@ -34,5 +34,11 @@
         "project_url": "https://github.com/Pranav-Rustagi/tip-calculator-app",
         "live_url": "https://tip-calculator-app-pranavrustagi.netlify.app/",
         "skills": ["html", "scss", "js", "react"]
+    },
+    {
+        "name": "Results summary component",
+        "project_url": "https://github.com/Pranav-Rustagi/frontendmentorChallenges/tree/main/results-summary-component",
+        "live_url": "https://pranav-rustagi.github.io/frontendmentorChallenges/results-summary-component",
+        "skills": ["html", "css"]
     }
 ]
